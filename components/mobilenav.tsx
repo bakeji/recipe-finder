@@ -24,7 +24,7 @@ export default function MobileNav({showMobileNav, setShowMobileNav}:MobileProps)
                 </ul>
              </nav>    
 
-          <div className="w-[100%] flex items-center justify-center ">
+          <div className="w-[100%] flex items-center justify-center mt-5 ">
           <Link onClick={()=>{setShowMobileNav(false)}} href='/recipes' className="text-[20px] py-3 w-full text-center font-[700] px-4 box-content bg-[#163A34] text-white rounded-[10px] ">Browse recipes</Link>
         </div>    
                 
