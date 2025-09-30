@@ -18,7 +18,7 @@ export default function NavBar({showMobileNavBtn}: MobileProps){
         <header className=" w-[100%] py-4 border-b font-nunito border-[#E0E6E3]" >
                     <div className="flex w-[90%] mx-auto items-center justify-between ">
                       <div>
-                        <a href="/"><Image src='/Logo.png' width={260} height={40} alt="logo" /></a>
+                        <Link href="/"><Image src='/Logo.png' width={260} height={40} alt="logo" /></Link>
                       </div>
         
                  <nav className='max-md:hidden' >
@@ -29,7 +29,7 @@ export default function NavBar({showMobileNavBtn}: MobileProps){
                     </ul>
                  </nav>
         
-                <button className="max-md:hidden py-3 text-[20px] font-[700] px-4 box-content bg-[#163A34] text-white rounded-[10px] ">Browse recipes</button>
+                <Link href='/recipes' className="max-md:hidden py-3 text-[20px] font-[700] px-4 box-content bg-[#163A34] text-white rounded-[10px] ">Browse recipes</Link>
                 <button onClick={showMobileNavBtn} className="md:hidden "><Image src='/hamburger.png' width={40} height={40} alt="hamburger-icon" /></button>
 
                     </div>

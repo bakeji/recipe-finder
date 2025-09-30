@@ -1,9 +1,8 @@
 'use client'
-import RecipeList from "@/components/recipe-list"
-import Image from "next/image"
-import data from "@/data.json"
-import { useState } from "react"
-import Link from "next/link"
+import RecipeList from "@/components/recipe-list";
+import Image from "next/image";
+import data from "@/data.json";
+import { useState } from "react";
 
 export default function Recipes(){
     
