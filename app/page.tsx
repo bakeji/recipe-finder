@@ -26,7 +26,7 @@ const features=[
         <div className='w-[90%] mx-auto my-10 '>
             <div className='flex  flex-col items-center justify-center gap-10 max-md:items-start '>
                 <div className='font-nunito '>
-                    <h1 className='text-[72px]  text-center font-[800] text-[#163A34] max-md:text-[50px] max-md:text-start '><span className='bg-[#FE9F6B] h-[10px]'>Healthy</span> meals, zero fuss</h1>
+                    <h1 className='text-[72px]  text-center font-[800] text-[#163A34] max-md:text-[50px] max-md:text-start '><span>Healthy</span> meals, zero fuss</h1>
                     <div className='w-[69%] mx-auto max-md:w-full'><p className='text-[20px] text-center font-[500] text-[#163A34] max-md:text-start '>Discover eight quick, whole-food recipes that you can cook tonight -no processed junk, no guesswork.</p> </div>
                     <div className='px-[32px] py-[16px] rounded-[10px] w-[224px] text-[20px] font-[700] mx-auto max-md:mx-0 my-6 text-white bg-[#163A34]'><Link href='/recipes'>Start exploring</Link></div>
                 </div>
@@ -37,7 +37,7 @@ const features=[
 
             <div className='mx-auto mt-10' >
                 <h2 className='text-center text-[48px] font-[800] text-[#163A34] max-md:text-start'>What you'll get</h2>
-                <div className='flex items-center justify-center gap-4 mt-10 max-md:flex-col max-md:items-start '>
+                <div className='flex items-center justify-center w-full gap-4 mt-10 max-md:flex-col max-md:items-start '>
                     {features.map((feature, index) => (
                     <div key={index} className='flex-1/3 items-start flex-col justify-center gap-5 max-md:flex-1  ' >
                       <div className='w-[70px] h-[70px] rounded-[12px] border-[#E9EDE8] border bg-white flex items-center justify-center '>
