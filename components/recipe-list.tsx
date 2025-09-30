@@ -58,7 +58,7 @@ export default function RecipeList({data}:RecipeProps){
                 </div>
 
                <div className="flex items-center w-full justify-center ">
-                 <Link className="px-[32px] py-[16px] rounded-4xl w-[95%] text-center text-[16px] font-[700] text-white bg-[#163A34]" href={`recipes/${recipe.slug}`}> View Recipe</Link> 
+                 <Link className="px-[32px] py-[16px] rounded-4xl w-[95%] text-center text-[16px] font-[700] text-white bg-[#163A34]" href={`/recipes/${recipe.slug}`}> View Recipe</Link> 
                </div>
             </div>
 
