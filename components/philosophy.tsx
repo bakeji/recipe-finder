@@ -10,9 +10,9 @@ export default function Philosophy(){
     return(
         
         <div className="w-[90%] mx-auto flex gap-18 justify-between items-start py-12 max-lg:flex-col" >
-            <h1 className=" text-[48px] w-2/5  font-[800] text-[#163A34] text-center max-lg:text-left"> Our food Philosophy</h1>
+            <h1 className=" text-[48px] w-2/5  font-[800] text-[#163A34] text-center max-lg:text-left max-lg:w-full"> Our food Philosophy</h1>
 
-            <div className="flex flex-col gap-6  items-start justify-center w-3/5">
+            <div className="flex flex-col gap-6  items-start justify-center w-3/5  max-lg:w-full  ">
                 {philosophys.map((reasons,id)=>(
                     <div key={id} className="flex gap-2 justify-center items-start" >
                         <Image className="mt-2" src='/icon-bullet-point.svg' width={32} height={32} alt="bullet point" />

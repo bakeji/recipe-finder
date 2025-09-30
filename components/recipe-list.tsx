@@ -27,7 +27,6 @@ export default function RecipeList({data}:RecipeProps){
     const pathName = usePathname()
 
     const randomRecipes = data.sort(()=> Math.random()-0.5 ).slice(0, 3);
-console.log(randomRecipes)
  const newData = pathName === '/recipes'? data : randomRecipes
 
 
@@ -58,8 +57,8 @@ console.log(randomRecipes)
                     </div>
                 </div>
 
-               <div className="flex items-center w-[100%] justify-center max-lg:justify-start">
-                 <div className="px-[32px] py-[16px] rounded-4xl w-[90%] text-center text-[16px] font-[700] text-white bg-[#163A34]"> <Link href={`recipes/${recipe.slug}`}> View Recipe</Link> </div>
+               <div className="flex items-center w-full justify-center ">
+                 <Link className="px-[32px] py-[16px] rounded-4xl w-[95%] text-center text-[16px] font-[700] text-white bg-[#163A34]" href={`recipes/${recipe.slug}`}> View Recipe</Link> 
                </div>
             </div>
 

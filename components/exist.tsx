@@ -9,9 +9,9 @@ export default function WhyWeExist(){
     return(
         <div className="border-b-1 border-[#E0E6E3]">
             <div className="w-[90%] mx-auto flex gap-18 justify-between items-start py-12 max-lg:flex-col " >
-                <h1 className=" text-[48px] w-2/5 font-[800] text-[#163A34] text-center max-lg:text-left "> Why we exist </h1>
+                <h1 className=" text-[48px] w-2/5 font-[800] text-[#163A34] text-center max-lg:text-left max-lg:w-full "> Why we exist </h1>
 
-                <div className="flex flex-col w-3/5 gap-6 items-start justify-center" >
+                <div className="flex flex-col w-3/5 gap-6 items-start justify-center max-lg:w-full " >
                     {reasons.map((reason, id)=>(
                     <div key={id} className="flex gap-2 justify-center items-start ">
                         <Image className="mt-2" src='/icon-bullet-point.svg' width={32} height={32} alt="bullet point" />
