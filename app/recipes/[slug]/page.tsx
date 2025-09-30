@@ -2,11 +2,13 @@ import RecipeList from "@/components/recipe-list";
 import data from "@/data.json"
 import Image from "next/image"
 import Link from "next/link";
-type Props= {
-params:{slug:string};
+
+type RecipeProps= {
+params: Promise<{slug:string}>;
 }
-export default function Recipe({params}:Props){
-    const recipeDetails = data.find((recipes)=> recipes.slug === params.slug)
+export default async function Recipe({params}:RecipeProps){
+    const {slug}= await params
+    const recipeDetails = data.find((recipes)=> recipes.slug === slug)
    
 
     if(!recipeDetails){
